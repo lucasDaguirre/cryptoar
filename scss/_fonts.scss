@@ -14,6 +14,12 @@ h1{
     }
 }
 
+.header-subpages{
+    .nav-menu{
+        color: black;
+    }
+}
+
 .page-footer{
     color: $grey;
     h5{
@@ -25,6 +31,19 @@ h1{
     }
 }
 
+.main-container{
+    .page-title{
+        .breadcrumbs{
+            a{
+                color: $rosa;
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
 .index-hero{
     color: $white;
     p{
@@ -32,6 +51,39 @@ h1{
     }
     .demo-txt{
         font-weight: 700;
+    }
+}
+
+.blog-container{
+    .blog-grid{
+        .blog-card{
+            .card-title{
+                h2{
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    &:hover{
+                        color: $rosa;
+                    }
+                }
+                .card-tags{
+                    .tag{
+                        color: $white;
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                    }
+                    .date-tag{
+                        font-size: .9rem;
+                    }
+                }
+            }
+            .card-footer{
+                a{
+                    &:hover{
+                        color: $rosa;
+                    }
+                }
+            }
+        }
     }
 }
 

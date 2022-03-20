@@ -1,10 +1,9 @@
 /* HEADER */
 
 .page-header{
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 2;
-    animation: slide-in .5s;
     .header-top{
         background-color: $gris-oscuro;
         padding: 0.5rem 2rem;
@@ -37,12 +36,7 @@
             gap: 1rem;
             ul{
                 display: flex;
-                gap: 1rem;
-                li{
-                    &:hover{
-                        color: $rosa;
-                    }
-                }      
+                gap: 1rem;      
             }
             .nav-login{
                 display: flex;
@@ -50,6 +44,18 @@
                 border-left: #f4f4f4 1px solid;
                 padding-left: 1rem;
             }
+        }
+    }
+}
+
+.header-subpages{
+    position: unset;
+    nav{
+        color: black;
+    }
+    li{
+        &:hover{
+            color: $rosa;
         }
     }
 }
