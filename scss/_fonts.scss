@@ -1,0 +1,50 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.page-header{
+    color: $white;
+    .nav-menu{
+        font-size: 1.2rem;
+        color: $white;
+    }
+}
+
+.page-footer{
+    color: $grey;
+    h5{
+        font-size: 1.3rem;
+        color: $white;
+    }
+    a:hover{
+        color: $white;
+    }
+}
+
+.index-hero{
+    color: $white;
+    p{
+        font-size: 1.3rem;
+    }
+    .demo-txt{
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .page-header{
+        .nav-logo{
+            color: black;
+        }
+    }
+    .index-hero{
+        color: black;
+        .demo-txt{
+            color: $rosa;
+        }
+    }
+}

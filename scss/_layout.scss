@@ -1,0 +1,92 @@
+.slide-top{
+    animation: slide-in 0.5s;
+}
+
+.cover{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+html{
+    animation: fade-in 1.5s;
+
+}
+
+.index-hero{
+    height: 100vh;
+    display: flex;
+    .hero-body{
+        flex: 1;
+        flex-shrink: 1;
+        padding: 0 5rem;
+        z-index: 1;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        height: 100%;
+        .hero-txt{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .hero-btn{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    .hero-video{
+        display: flex;
+        flex: 2;
+        video{
+            filter: brightness(70%);
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .index-hero{
+        flex-direction: unset;
+        .hero-body{
+            text-align: unset;
+            align-items: unset;
+            position: unset;
+            height: unset;
+        }
+        .hero-video{
+            display: flex;
+            video{
+                filter: brightness(100%);
+            }
+        }
+    }
+}
+
+// Animations - Transitions
+
+@keyframes slide-in{
+    from {
+        transform: translateY(-100%);
+      }
+    
+      to {
+        transform: translateY(0%);
+      }
+    
+}
+
+@keyframes fade-in{
+    from {
+        opacity: (.5);
+      }
+    
+      to {
+        opacity: (1);
+      }
+    
+}

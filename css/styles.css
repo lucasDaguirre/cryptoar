@@ -1,0 +1,338 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+a, button {
+  all: unset;
+  cursor: pointer;
+}
+
+svg {
+  display: block;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.page-header {
+  color: #f4f4f4;
+}
+.page-header .nav-menu {
+  font-size: 1.2rem;
+  color: #f4f4f4;
+}
+
+.page-footer {
+  color: #acacac;
+}
+.page-footer h5 {
+  font-size: 1.3rem;
+  color: #f4f4f4;
+}
+.page-footer a:hover {
+  color: #f4f4f4;
+}
+
+.index-hero {
+  color: #f4f4f4;
+}
+.index-hero p {
+  font-size: 1.3rem;
+}
+.index-hero .demo-txt {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 900px) {
+  .page-header .nav-logo {
+    color: black;
+  }
+
+  .index-hero {
+    color: black;
+  }
+  .index-hero .demo-txt {
+    color: #ff10b7;
+  }
+}
+/* HEADER */
+.page-header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  animation: slide-in 0.5s;
+}
+.page-header .header-top {
+  background-color: #1b1b1b;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: end;
+}
+.page-header .header-top button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.page-header nav {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-header nav .nav-logo .logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+}
+.page-header nav .nav-menu {
+  justify-content: end;
+  display: none;
+  gap: 1rem;
+}
+.page-header nav .nav-menu ul {
+  display: flex;
+  gap: 1rem;
+}
+.page-header nav .nav-menu ul li:hover {
+  color: #ff10b7;
+}
+.page-header nav .nav-menu .nav-login {
+  display: flex;
+  gap: 1rem;
+  border-left: #f4f4f4 1px solid;
+  padding-left: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .page-header nav .nav-menu {
+    display: flex;
+  }
+  .page-header nav .nav-hambtn {
+    display: none;
+  }
+}
+/* FOOTER */
+.page-footer {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #1b1b1b;
+}
+.page-footer .footer-body {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.page-footer .footer-body .footer-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+.page-footer .footer-body .footer-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.page-footer .footer-body .link-box {
+  display: none;
+}
+.page-footer .footer-body .sm-box {
+  flex-direction: row;
+}
+.page-footer .footer-body .sm-box .foot-icons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.page-footer .footer-body .sm-box .foot-icons .footer-sm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.page-footer .footer-body .sm-box .foot-icons .footer-sm .sm-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.page-footer .footer-body .footer-accordion {
+  display: flex;
+  flex-direction: column;
+}
+.page-footer .footer-body .footer-accordion .accordion-panel {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.page-footer .footer-bottom {
+  border-top: 1px solid #f4f4f4;
+  width: 80%;
+  margin: auto;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .page-footer .footer-body {
+    flex-direction: row;
+  }
+  .page-footer .footer-body .link-box {
+    display: flex;
+  }
+  .page-footer .footer-body .accordion {
+    display: none;
+  }
+  .page-footer .footer-body .sm-box {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .page-footer .footer-body .sm-box .foot-icons {
+    align-items: unset;
+  }
+  .page-footer .footer-body .sm-box .foot-icons .footer-sm .sm-row {
+    justify-content: unset;
+  }
+  .page-footer .footer-bottom {
+    text-align: unset;
+  }
+}
+.slide-top {
+  animation: slide-in 0.5s;
+}
+
+.cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+html {
+  animation: fade-in 1.5s;
+}
+
+.index-hero {
+  height: 100vh;
+  display: flex;
+}
+.index-hero .hero-body {
+  flex: 1;
+  flex-shrink: 1;
+  padding: 0 5rem;
+  z-index: 1;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+}
+.index-hero .hero-body .hero-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.index-hero .hero-body .hero-btn {
+  display: flex;
+  gap: 1rem;
+}
+.index-hero .hero-video {
+  display: flex;
+  flex: 2;
+}
+.index-hero .hero-video video {
+  filter: brightness(70%);
+}
+
+@media only screen and (min-width: 900px) {
+  .index-hero {
+    flex-direction: unset;
+  }
+  .index-hero .hero-body {
+    text-align: unset;
+    align-items: unset;
+    position: unset;
+    height: unset;
+  }
+  .index-hero .hero-video {
+    display: flex;
+  }
+  .index-hero .hero-video video {
+    filter: brightness(100%);
+  }
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
